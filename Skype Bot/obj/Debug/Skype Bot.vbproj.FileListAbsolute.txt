@@ -1,0 +1,13 @@
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\bin\Debug\Skype Bot.exe.config
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\bin\Debug\Skype Bot.exe
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\bin\Debug\Skype Bot.pdb
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\bin\Debug\Skype Bot.xml
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.vbprojResolveAssemblyReference.cache
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Interop.SKYPE4COMLib.dll
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.vbproj.ResolveComReference.cache
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype_Bot.Form1.resources
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype_Bot.Resources.resources
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.vbproj.GenerateResource.Cache
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.exe
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.xml
+c:\users\jackk\documents\visual studio 2015\Projects\Skype Bot\Skype Bot\obj\Debug\Skype Bot.pdb
