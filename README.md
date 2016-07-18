@@ -1,5 +1,5 @@
 # SkypeBot
-This is the main branch for SkypeBot here you can find the original source code. feel free to redistribute and change the code but no selling it without our permission first.
+This is ZokiYT's edit of the SkypeBot feel free to redistribute but DO NOT EDIT THE CODE! if you want to edit the code edit the source code from the master branch.
 
 #Notes 
 Coded using Microsoft Visual Studio 2015 Ultimate Edition
