@@ -1,0 +1,6 @@
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\bin\Debug\Skype Bot.exe.config
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\obj\Debug\Interop.SKYPE4COMLib.dll
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\obj\Debug\ZokiBot.vbproj.ResolveComReference.cache
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\obj\Debug\Skype Bot.exe
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\obj\Debug\Skype Bot.xml
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\ZokiBot\obj\Debug\Skype Bot.pdb

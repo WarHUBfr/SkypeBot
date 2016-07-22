@@ -24,3 +24,9 @@ C:\Users\William Johnstone\Desktop\Skype Bot\Skype Bot\obj\Debug\Skype Bot.exe
 C:\Users\William Johnstone\Desktop\Skype Bot\Skype Bot\obj\Debug\Skype Bot.xml
 C:\Users\William Johnstone\Desktop\Skype Bot\Skype Bot\obj\Debug\Skype Bot.pdb
 C:\Users\William Johnstone\Desktop\Skype Bot\Skype Bot\obj\Debug\Skype Bot.vbprojResolveAssemblyReference.cache
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\bin\Debug\Skype Bot.exe.config
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\obj\Debug\Interop.SKYPE4COMLib.dll
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\obj\Debug\Skype Bot.vbproj.ResolveComReference.cache
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\obj\Debug\Skype Bot.exe
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\obj\Debug\Skype Bot.xml
+C:\Users\William Johnstone\Documents\Visual Studio 2015\Projects\Zoki Bot\Skype Bot\obj\Debug\Skype Bot.pdb
