@@ -2,35 +2,37 @@
 Imports System.Windows.Forms
 
 Public Class Form1
-    Private skype As Skype
+    Dim WithEvents skype As New Skype
     Dim trigger As String = "!" 'This is the trigger mark
+    
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        skype = New Skype
-        skype.Attach() 'Attaches the program to Skype. Will need to be allowed through Skype itself. 
-        AddHandler skype.MessageStatus, AddressOf skype_stat
+        pSkype.Attach(7, True) 'Attaches the program to Skype. Will need to be allowed through Skype itself. 
     End Sub
-    Public Sub skype_stat(ByVal msg As ChatMessage, ByVal status As TChatMessageStatus)
-        If msg.Body.Contains(trigger) Then '! Is the trigger here. If the ! is detected then the trigger will be deteced
-            Dim sendme As String = msg.Body.Replace(trigger, "") 'removes the trigger from the message. for example if the message was "!hello", the it would be "hello"
-            skype.SendMessage(msg.Sender.Handle, cases(sendme)) 'sends message.
-        End If
+Private Sub pSkype_MessageStatus(pMessage As ChatMessage, Status As TChatMessageStatus) Handles pSkype.MessageStatus
+        If Status = TChatMessageStatus.cmsReceived Or Status = TChatMessageStatus.cmsSent Then
+            Dim msg As String = pMessage.Body
+            Dim sb As Chat = pMessage.Chat
+            Dim params As String() = msg.Split(" ")
+            Dim start As String = "/me :"
+            If msg.StartsWith(trigger) Then
 
-    End Sub
-    Public Function cases(ByVal sent As String)
-        Dim result As String
-        Select Case sent
 
-            Case Is = "help" 'What the user will need to type. 
-                result = "SkypeBot" + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "Welcome to the SkypeBot. This is a BOT so there will not be any human replies. For a list of commands type !commands." 'What the bot will reply with
-                Exit Select
-            Case Is = "commands"
-                result = "SkypeBot" + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "!help - Will display the help message" + vbNewLine + "!commands - Will display all the commands you can use with this bot."
-                Exit Select
-            Case Else
-                result = "SkypeBot" + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "Not a valid command"
-        End Select
+                msg = msg.Remove(0, 1)
 
-        Return result
-
-    End Function
+                System.Threading.Thread.Sleep(500) ' Fix some bug
+                If msg = "help" Then
+                sb.SendMessage(start + vbNewLine +"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "Welcome to the SkypeBot. This is a BOT so there will not be any human replies. For a list of commands type !commands.") 'What the bot will reply with
+            Elseif msg = "commands" Then
+                sb.SendMessage(start + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "!help - Will display the help message" + vbNewLine + "!commands - Will display all the commands you can use with this bot.")
+              Elseif msg.StartsWith("input") Then
+              
+              if params(1) = "" Then
+              sb.SendMessage(start + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "No Input, type : !input test")
+              Else
+                sb.SendMessage(start + vbNewLine + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "I recieved : " + params(1))
+              end if
+              Else
+                 sb.SendMessage(start + vbNewLine +"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + vbNewLine + "Not a valid command")
+                 End if
+ End Sub
 End Class
